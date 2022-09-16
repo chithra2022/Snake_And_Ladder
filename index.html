@@ -4,59 +4,64 @@
 		<title>Snake & Ladder</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/playfunction.js"></script>
 	</head>
 	<body>
 		<div class="play_area">
 			<div class="mainleft">
 				<div class="left">
-					<div class="player">Player</div>
-					<div class="round">
-						<img src="img/red.png" alt="">
+					<div class="playerlist">
+						<div class="player">Player 1</div>
+						<div class="round">
+							<img src="img/red.png" alt="" id="go">
+						</div>
+					</div>
+					<div class="playerlist">
+						<div class="player">Player 2</div>
+						<div class="round1">
+							<img src="img/green.png" alt="" id="go">
+						</div>
 					</div>
 				</div>
-				<div class="game">
-    					<div class="container">
-      						<div id='dice1' class="dice dice-one">
-        						<div id="dice-one-side-one" class='side one'>
-          							<div class="dot one-1"></div>
-        						</div>
-        						<div id="dice-one-side-two" class='side two'>
-          							<div class="dot two-1"></div>
-          							<div class="dot two-2"></div>
-        						</div>
-        						<div id="dice-one-side-three" class='side three'>
-          							<div class="dot three-1"></div>
-          							<div class="dot three-2"></div>
-          							<div class="dot three-3"></div>
-        						</div>
-        						<div id="dice-one-side-four" class='side four'>
-          							<div class="dot four-1"></div>
-          							<div class="dot four-2"></div>
-          							<div class="dot four-3"></div>
-          							<div class="dot four-4"></div>
-        						</div>
-        						<div id="dice-one-side-five" class='side five'>
-          							<div class="dot five-1"></div>
-          							<div class="dot five-2"></div>
-          							<div class="dot five-3"></div>
-          							<div class="dot five-4"></div>
-          							<div class="dot five-5"></div>
-        						</div>
-        						<div id="dice-one-side-six" class='side six'>
-          							<div class="dot six-1"></div>
-          							<div class="dot six-2"></div>
-          							<div class="dot six-3"></div>
-          							<div class="dot six-4"></div>
-          							<div class="dot six-5"></div>
-          							<div class="dot six-6"></div>
-        						</div>
-      						</div>
-   					</div>
-    					<div id='roll' class='roll-button'><button>Roll Dice!</button></div>
-  				</div> 
+				<div id="dice" data-side="1">
+    					<div class="sides side-1">
+        					<span class="dot dot-1"></span>
+    					</div>
+    					<div class="sides side-2">
+        					<span class="dot dot-1"></span>
+        					<span class="dot dot-2"></span>
+    					</div>
+    					<div class="sides side-3">
+        					<span class="dot dot-1"></span>
+        					<span class="dot dot-2"></span>  
+        					<span class="dot dot-3"></span>
+    					</div>
+    					<div class="sides side-4">
+        					<span class="dot dot-1"></span>
+        					<span class="dot dot-2"></span>  
+        					<span class="dot dot-3"></span>
+        					<span class="dot dot-4"></span>
+    					</div>
+    					<div class="sides side-5">
+        					<span class="dot dot-1"></span>
+        					<span class="dot dot-2"></span>  
+        					<span class="dot dot-3"></span>
+        					<span class="dot dot-4"></span>
+        					<span class="dot dot-5"></span>
+    					</div>
+    					<div class="sides side-6">
+        					<span class="dot dot-1"></span>
+        					<span class="dot dot-2"></span>  
+        					<span class="dot dot-3"></span>
+        					<span class="dot dot-4"></span>
+        					<span class="dot dot-5"></span>
+        					<span class="dot dot-6"></span>
+    					</div>
+				</div>
 			</div>
 			<div class="middle">
+				<div class="move-dot1">
+					<img src="img/red.png" id="movedot2" alt="">
+				</div>
 				<img src="img/board.jpg" alt="">
 			</div>
 			<div class="right">
@@ -66,6 +71,6 @@
 				<p>Let's have the fun !</p>
 			</div>
 		</div>
-		<script src="js/dice.js"></script>
+		<script src="js/play.js"></script>
 	</body>
 </html>
