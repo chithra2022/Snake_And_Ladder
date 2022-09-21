@@ -23,18 +23,26 @@ body{
     	justify-content: center;
 	padding-top: 65px;
 	position: relative;
+	
+	
+}
+.tbody{
+	width: 80%;
+	background-image: url("../img/board.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	 background-size: 100% 100%;
 }
 .move-dot1{
-	position: absolute;
+	
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: red;
-	bottom: 2%;
-	left: 7%;
+	background-color: black;
+	margin-left: 17px;
 }
 .move-dot2{
-	position: absolute;
+	
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
@@ -42,9 +50,7 @@ body{
 	bottom: 2%;
 	left: 7%;
 }
-.middle img{
-	width: 90%;
-}
+
 .right{
 	text-align: center;
 	padding-top: 65px;
@@ -76,6 +82,11 @@ p{
 	font-size: 21px;
 	padding: 5px;	
 	color: #ffde03;
+}
+.cell{
+	width: 75px;
+	height: 50px;
+	
 }
 #dice {
     width: 90px;
