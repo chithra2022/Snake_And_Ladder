@@ -6,12 +6,10 @@ let start_player_one;
 let click=0;
 let player_one_turn = false;
 let player_two_turn = false;
-
 var element_one = document.getElementById("playerOne");
 element_one.style.display = "none";
 var element_two = document.getElementById("playerTwo");
 element_two.style.display = "none";
-
 var player_one_active = document.getElementById("turn_of_one");
 var player_two_active = document.getElementById("turn_of_two");
 
@@ -20,26 +18,21 @@ function Click_Dice() {
 	if(click % 2 == 1){
 		player_one_turn = true;
 		first_player(player_one_turn);
-
 		player_one_active.style.color = "white";
 		player_two_active.style.color = "#ffde03";
 	}
 	else{
 		player_two_turn = true;
 		second_player(player_two_turn);
-
 		player_one_active.style.color = "#ffde03";
 		player_two_active.style.color = "white";
 	}
 }
-
 function first_player(player_one_turn){
-	
 	let result = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
     	dice.dataset.side = result;
     	dice.classList.toggle("reRoll");
-    	
-	if(result == 1){
+    	if(result == 1){
 		start_player_one = 1;	
 	}
 	try{
@@ -99,7 +92,6 @@ function first_player(player_one_turn){
 			if(current_player_one > 100){
 				current_player_one = current_player_one - result;
 			}
-		
 			const parent = document.getElementById(""+current_player_one+"");
 			const child = document.getElementById('playerOne');
 			console.log("Player One Turn");
@@ -112,13 +104,10 @@ function first_player(player_one_turn){
 		console.log(error);
 	}
 }
-
 function second_player(player_two_turn){
-	
     	let result = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
     	dice.dataset.side = result;
     	dice.classList.toggle("reRoll");
-
 	if(result == 1){
 		start_player_two = 1;	
 	}
@@ -179,7 +168,6 @@ function second_player(player_two_turn){
 			if(current_player_two > 100){
 				current_player_two = current_player_two - result;
 			}
-		
 			const parent = document.getElementById(""+current_player_two+"");
 			const child = document.getElementById('playerTwo');
 			console.log("Player Two Turn");
