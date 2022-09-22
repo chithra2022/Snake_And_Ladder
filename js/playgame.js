@@ -39,7 +39,6 @@ function first_player(player_one_turn){
 		if(start_player_one == 1){
 			current_player_one += result;
 			element_one.style.display = "block";
-	
 			switch (current_player_one){
       				case 4: 
 					current_player_one = 25;
@@ -115,7 +114,6 @@ function second_player(player_two_turn){
 		if(start_player_two == 1){
 			current_player_two += result;
 			element_two.style.display = "block";
-	
 			switch (current_player_two){
       				case 4: 
 					current_player_two = 25;
