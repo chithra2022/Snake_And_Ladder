@@ -18,14 +18,14 @@ function Click_Dice() {
 	if(click % 2 == 1){
 		player_one_turn = true;
 		first_player(player_one_turn);
-		player_one_active.style.color = "white";
-		player_two_active.style.color = "#ffde03";
+		player_one_active.style.color = "#ffde03";
+		player_two_active.style.color = "white";
 	}
 	else{
 		player_two_turn = true;
 		second_player(player_two_turn);
-		player_one_active.style.color = "#ffde03";
-		player_two_active.style.color = "white";
+		player_one_active.style.color = "white";
+		player_two_active.style.color = "#ffde03";
 	}
 }
 function first_player(player_one_turn){
